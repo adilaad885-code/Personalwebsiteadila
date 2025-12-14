@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adila’s Education Page</title>
+
+<!-- W3.CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        background: #3e2c23;
+        font-family: 'Quicksand', sans-serif;
+        color: #f0e6dc;
+    }
+
+    /* NAVIGATION BAR */
+    .navbar {
+        position: sticky;
+        top: 0;
+        background: #5a3e36;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+        z-index: 1000;
+        border-bottom: 2px solid #d9b382;
+    }
+
+    .navbar a {
+        color: #f0e6dc;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 600;
+        padding: 8px 16px;
+        border-radius: 8px;
+        transition: 0.3s;
+        font-size: 16px;
+    }
+
+    .navbar a:hover {
+        background: #d9b382;
+        color: #3e2c23;
+    }
+
+    /* Header Section */
+    .header {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("canvaedu.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .header-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 38px;
+        background: rgba(0,0,0,0.5);
+        padding: 12px 30px;
+        color: #f0e6dc;
+        border-radius: 12px;
+        letter-spacing: 2px;
+        animation: fadeInDown 1.5s ease forwards;
+    }
+
+    @keyframes fadeInDown {
+        0% {opacity: 0; transform: translateY(-40px);}
+        100% {opacity: 1; transform: translateY(0);}
+    }
+
+    .container {
+        padding: 40px 10%;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 25px;
+        font-weight: bold;
+        color: #d9b382;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Make card clickable */
+    .card-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .card {
+        background: #5a3e36;
+        border: 3px solid #d9b382;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+        transition: 0.4s;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+    }
+
+    .slide-box {
+        width: 100%;
+        height: 260px;
+        overflow: hidden;
+        border-radius: 14px;
+        position: relative;
+    }
+
+    .slide-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: none;
+    }
+
+    .card-title {
+        font-family: 'Playfair Display', serif;
+        margin-top: 12px;
+        font-size: 20px;
+    }
+
+    footer {
+      background-color: #91916e;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+
+    .card p {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .click-text {
+        font-size: 14px;
+        color: #d9b382;
+        margin-top: 12px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="adila's biodata.html">Biodata</a>
+    <a href="adila's skills.html">Skills</a>
+    <a href="adila's song.html">Song</a>
+    <a href="adila's gallery.html">Gallery</a>
+</div>
+
+<!-- HEADER -->
+<div class="header" id="home">
+    <div class="header-text"> Explore My Academic Path! </div>
+</div>
+
+<div class="container" id="biodata">
+    
+    <div class="cards">
+
+        <!-- CARD 1 — KINDERGARTEN -->
+        <a class="card-link" 
+           href="https://www.google.com/maps/dir/Sekolah+Kebangsaan+Kempas,+Jalan+Lurah+15,+Kempas+Baru,+Johor+Bahru,+Johor/Jalan+Lurah+15,+Kempas+Baru,+81200+Johor+Bahor/@1.5434066,103.717333" 
+           target="_blank">
+
+            <div class="card">
+                <div class="slide-box">
+                    <img class="sl1" src="skk.jpg">
+                    <img class="sl1" src="pra1.jpg">
+                </div>
+
+                <div class="card-title"> Kindergarten &#127809;</div>
+                <p>I began my early education at Prasekolah Sekolah Kebangsaan Kempas in 2011. During kindergarten, I was introduced to basic learning skills such as reading, writing, and social interaction. This stage helped build my confidence and prepared me for formal schooling.</p>
+
+                <div class="click-text"><u>This is my kindergarten!</u></div>
+            </div>
+        </a>
+
+        <!-- CARD 2 — PRIMARY SCHOOL -->
+        <a class="card-link"
+            href="https://www.google.com/maps/dir/Sekolah+Kebangsaan+Kempas,+Jalan+Lurah+15,+Kempas+Baru,+Johor+Bahru,+Johor/Jalan+Lurah+15,+Kempas+Baru,+81200+Johor+Bahor/@1.5434066,103.717333" 
+             target="_blank">
+
+            <div class="card">
+                <div class="slide-box">
+                    <img class="sl2" src="rendah.jpg">
+                    <img class="sl2" src="skk.jpg">
+                </div>
+
+                <div class="card-title"> Primary School  &#127774;</div>
+                <p>Then continued my education at Sekolah Kebangsaan Kempas from 2012 until 2017. Throughout my secondary school years, I gained fundamental academic knowledge and developed important skills such as teamwork, discipline, and responsibility. I was actively involved in school activities, which helped shape my personal growth and learning attitude.</p>
+
+                <div class="click-text"><u>This is my primary school!</u></div>
+            </div>
+        </a>
+
+        <!-- CARD 3 — HIGH SCHOOL -->
+        <a class="card-link" 
+           href="https://www.google.com/maps/place/Sekolah+Menengah+Agama+Bugisiah+Tampok/@1.6581775,103.1986006,17z/data=!3m1!4b1!4m19!1m12!4m11!1m3!2m2!1d103.710767!2d1.5467098!1m6!1m2!1s0x31d08d16df32ff0d:0xf251c015193ed3bb!2sKampung+Tampok+Laut,+82200+Benut,+Johor!2m2!1d103.2011755!2d1.6581775!3m5!1s0x31d08d16df32ff0d:0xf251c015193ed3bb!8m2!3d1.6581775!4d103.2011755!16s%2Fg%2F11cjp6h4w6?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D" 
+           target="_blank">
+           <div class="card">   
+               <div class="slide-box">
+                    <img class="sl3" src="school12.jpg">
+                    <img class="sl3" src="school10.jpg">
+                    <img class="sl3" src="school7.jpg">
+                </div>
+
+                <div class="card-title"> High School &#127775;</div>
+                <p>Continue studied at Sekolah Menengah Kebangsaan Agama Pengawa Barat from 2018 to 2023. Studying in a religious-based secondary school strengthened my academic abilities while also nurturing my moral values and self-discipline. This experience played an important role in shaping my character and preparing me for higher education.</p>
+
+                <div class="click-text"><u>This is my High school!</u></div>
+            </div>
+        </a>
+
+        <!-- CARD 4 — UNIVERSITY -->
+        <a class="card-link" href="https://www.google.com/maps/dir//Jalan+Universiti+Off,+KM+12,+Jalan+Muar,+Kemajuan+Tanah+Jementah+Batu+Sebelas,+85000+Segamat,+Johor+Darul+Ta'zim/@1.5434066,103.717333,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31ce2c6ce929a871:0xc0dfa5fe6922a589!2m2!1d102.7293026!2d2.4879644?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D"                    
+        target="_blank">
+            <div class="card">
+                <div class="slide-box">
+                    <img class="sl4" src="uitm.jpg">
+                    <img class="sl4" src="uni2.jpg">
+                    <img class="sl4" src="uni3.jpg">
+                </div>
+
+                <div class="card-title"> University &#127891;</div>
+                <p>In 2023, I continued my studies at Universiti Teknologi MARA (UiTM). I am currently pursuing a Diploma in Information Management, where I am learning about information organization, records management, digital systems, and research skills. This program has enhanced my interest in managing information effectively and preparing me for a professional career in the information field.</p>
+
+                <div class="click-text"><u>This is my University!</u></div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 Siti Nur Adila binti Shaharudin. All Rights Reserved</p>
+  </footer>
+
+
+<script>
+function runSlideshow(className) {
+    let i = 0;
+    const slides = document.getElementsByClassName(className);
+
+    function showSlide() {
+        for (let x = 0; x < slides.length; x++) {
+            slides[x].style.display = "none";
+        }
+        i++;
+        if (i > slides.length) { i = 1; }
+        slides[i - 1].style.display = "block";
+        setTimeout(showSlide, 2000);
+    }
+    showSlide();
+}
+
+runSlideshow("sl1");
+runSlideshow("sl2");
+runSlideshow("sl3");
+runSlideshow("sl4");
+</script>
+
+</body>
+</html>

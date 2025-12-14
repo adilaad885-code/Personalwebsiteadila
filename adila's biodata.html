@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> Adila's Biodata</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Grandstander:wght@400;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f7f4ef url("backgroundbio.jpg");
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #5a4a42;
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 300px 340px;
+    background: url("coding14.jpg") center/cover no-repeat;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+    position: relative;
+  }
+
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    animation: float 4s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  /* Polaroid photo style */
+  .polaroid {
+    width: 400px;
+    padding: 10px;
+    background: white;
+    border: 2px solid #e7d7c9;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: rotate(-3deg);
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  .polaroid img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  /* Boxes */
+  .box {
+    width: 85%;
+    margin: 40px auto;
+    background: #fffdf8;
+    border: 2px solid #e8d8c8;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 1.2s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .box h2 {
+    font-family: 'Playfair Display', serif;
+    color: #8b6f5e;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Grid Cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .card {
+    background: #fff5f1;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #f2d6cc;
+    transition: 0.3s;
+    line-height: 1.5;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+
+  .polaroid-small {
+    background: white;
+    padding: 5px;
+    border-radius: 9px;
+    border: 2px solid #e1d4c8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+
+  /* Floating petals */
+  .petal {
+    position: fixed;
+    top: -10px;
+    width: 40px;
+    opacity: 0.8;
+    animation: fall 7s linear infinite;
+  }
+
+  @keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+  }
+
+  /* Social Media Icons */
+  .social-link {
+    color: #6f4e37;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .social-link:hover {
+    text-decoration: underline;
+  }
+
+  .social-link i {
+    margin-right: 6px;
+    font-size: 20px;
+  }
+
+  /* --- FOOTER WITH QUICK LINKS --- */
+.footer {
+    background-color: #fff7fa;
+    padding: 5px 3px;
+    font-family: 'Quicksand', sans-serif;
+    color: #4b3c53;
+    margin-top: 10px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left h3 {
+    color: #b38bfa;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.footer-left p {
+    color: #4b3c53;
+}
+
+.footer-right h3 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.footer-right a {
+    display: block;
+    text-decoration: none;
+    color: #4b3c53;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.footer-right a:hover {
+    color: #b38bfa;
+    padding-left: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d5c5e8;
+    margin-top: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4b3c53;
+}
+
+/* ---- FIXED BULLET LIST FOR FUN FACTS ---- */
+.card ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.card li {
+  text-align: center;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating petals -->
+<img class="petal" style="left: 20%;" src="ikan.jpg">
+<img class="petal" style="left: 50%; animation-delay: 1s;" src="ikan.jpg">
+<img class="petal" style="left: 80%; animation-delay: 5s;" src="ikan.jpg">
+
+<div class="header">
+  <h1>Welcome to my Biodata!</h1>
+</div>
+
+<div class="polaroid">
+  <img src="coding5.jpg" alt="Adila Picture">
+</div>
+
+<!-- About Me Box -->
+<div class="box" id="about">
+  <h2>&#127872; Biodata</h2>
+  <p><strong>Name:</strong> Siti Nur Adila binti Shaharudin</p>
+  <p><strong>Age:</strong> 20</p>
+  <p><strong>Birthday:</strong> 2 March 2005</p>
+  <p><strong>Hometown:</strong> Johor Bahru</p>
+  <p><strong>Course:</strong> Information Management</p>
+  <p><strong>Current education:</strong> UiTM Segamat</p>
+
+  <br>
+
+  <h3 style="color:#8b6f5e; font-family:'Playfair Display',serif;">Social Media</h3>
+
+  <p><strong>Instagram:</strong>
+    <a href="https://instagram.com/adilashhrudin" target="_blank" class="social-link">
+      <i class="fa-brands fa-instagram"></i> @adilashhrudin
+    </a>
+  </p>
+
+  <p><strong>TikTok:</strong>
+    <a href="https://www.tiktok.com/@badgalririi02" target="_blank" class="social-link">
+      <i class="fa-brands fa-tiktok"></i> @badgalririi02
+    </a>
+  </p>
+
+  <p><strong>Spotify:</strong>
+    <a href="https://spotify.link/9l3ukcuevXb" target="_blank" class="social-link">
+      <i class="fa-brands fa-spotify"></i> Dil0
+    </a>
+  </p>
+
+</div>
+
+<!-- Personality Box -->
+<div class="box">
+  <h2>&#127872; Personality</h2>
+  <p>I’m a messy, funny and loud little chaos ball who loves cracking jokes and making everyone around me laugh. Seeing everyone smile is literally my favourite thing ever.</p>
+</div>
+
+<!-- Fun Facts -->
+<div class="box" id="funfacts">
+  <h2>&#127872; Fun Facts</h2>
+  <div class="grid">
+
+    <div class="card">
+      <ul>
+        <li>I’m a beach lover. There’s nothing I enjoy more than sitting quietly, watching fish swim, and soaking in the ocean vibes.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li>Television is my ultimate chill buddy. I always make time for TV no matter what I'm doing.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li>My guilty pleasure show is <em>Keeping Up with the Kardashians</em>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li>Tea is my go-to drink. Warm, cozy and comforting!</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <ul>
+        <li>Hamsters are my favorite little creatures .</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Hobbies -->
+<div class="box" id="hobbies">
+  <h2>&#127872; Hobbies</h2>
+  <div class="grid">
+    <div class="card">I love watching television during my free time</div>
+    <div class="card">I enjoy cooking and trying new recipes</div>
+    <div class="card">Shopping is my favourite way to relax and treat myself</div>
+  </div>
+</div>
+
+<!-- FOOTER WITH QUICK LINKS -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <h3>Siti Nur Adila</h3>
+            <p>Information Management Student</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Quick Links</h3>
+            <a href="index.html">HOME</a>
+            <a href="adila's education.html">EDUCATION</a>
+            <a href="adila's skills.html">SKILLS</a>
+            <a href="adila's song.html">SONGS</a>
+            <a href="adila's gallery.html">GALLERY</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="footer-bottom">© 2025 Siti Nur Adila binti Shaharudin. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
